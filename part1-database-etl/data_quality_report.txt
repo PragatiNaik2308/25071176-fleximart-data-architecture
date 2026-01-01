@@ -1,0 +1,13 @@
+Number of records processed in Customers: 26
+Number of duplicates removed in Customers: 1
+Number of missing values handled in Customers: 5
+Number of records loaded successfully in Customer table: 25
+Number of records processed in Products: 20
+Number of duplicates removed in Products: 0
+Number of missing values handled in Products: 4
+Number of records loaded successfully in Products table: 20
+Number of records processed in Sales: 41
+Number of duplicates removed in Sales: 1
+Number of missing values handled in Sales: 5
+Number of records loaded successfully in Orders table: 35
+Number of records loaded successfully in order_items table: 35
