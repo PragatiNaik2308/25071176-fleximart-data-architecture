@@ -8,20 +8,23 @@ This project implements a **ETL pipeline** to clean, transform, and load raw cus
 
 ## Project Components
 
-### 1. ETL Pipeline (`etl_pipeline.py`)
+### 1. ETL Pipeline
 
-|          Step           |                                          Description                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------|
-| **Extract**             | - Reads `customers_raw.csv`, `products_raw.csv`, and `sales_raw.csv`. Logs success and errors.          |
-| **Transform**           | - Removes duplicate records<br>- Handles missing values (default emails, median prices, null stock → 0)  <br>- Standardizes phone numbers (`+91-XXXXXXXXXX`)<br>- Standardizes product category names<br>- Converts dates to `YYYY-MM-DD` 
-format                                                                                                                              |
-| **Load**                | - Inserts transformed data into tables: `customers`, `products`, `orders`, `order_items`<br>- Uses auto-increment surrogate keys<br>- Logs successful loading and errors                                                               |
-| **Logging**             | All ETL steps and errors are logged in `etl_pipeline.log` inside `part1-database-etl/`                  |
-| **Data Quality Report** | Generated as `data_quality_report.txt` detailing records processed, duplicates removed, missing values handled, and records loaded successfully                                                                                            |
+**File:** `etl_pipeline.py`
+
+| Step       | Description |
+|------------|-------------|
+| **Extract** | Reads `customers_raw.csv`, `products_raw.csv`, and `sales_raw.csv`. Logs success and errors. |
+| **Transform** | - Removes duplicate records<br>- Handles missing values (default emails, median prices, null stock → 0)<br>- Standardizes phone numbers (`+91-XXXXXXXXXX`)<br>- Standardizes product category names<br>- Converts dates to `YYYY-MM-DD` format |
+| **Load**    | - Inserts transformed data into tables: `customers`, `products`, `orders`, `order_items`<br>- Uses auto-increment surrogate keys<br>- Logs successful loading and errors |
+| **Logging** | All ETL steps and errors are logged in `etl_pipeline.log` inside `part1-database-etl/` |
+| **Data Quality Report** | Generated as `data_quality_report.txt` detailing records processed, duplicates removed, missing values handled, and records loaded successfully |
 
 ---
 
-### 2. Database Schema (`fleximart`)
+### 2. Database Schema 
+
+**Database:** `fleximart`
 
 | Table | Purpose | Key Attributes | Relationships |
 |-------|---------|----------------|---------------|
@@ -37,7 +40,9 @@ format                                                                          
 
 ---
 
-### 3. Data Quality Report (`data_quality_report.txt`)
+### 3. Data Quality Report
+
+**File:** `data_quality_report.txt`
 
 - Tracks:
   - Number of records processed per file
@@ -47,7 +52,9 @@ format                                                                          
 
 ---
 
-### 4. Business Queries (`business_queries.sql`)
+### 4. Business Queries
+
+**File:** `business_queries.sql`
 
 | Query | Business Question | Output Columns |
 |-------|-----------------|----------------|
