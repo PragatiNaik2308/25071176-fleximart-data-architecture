@@ -15,19 +15,23 @@ The FlexiMart Data Architecture Project demonstrates an end-to-end data solution
 
 ## Repository Structure
 ├── part1-database-etl/
+|   ├── business_queries.sql
+|   ├── data_quality_report.txt
 │   ├── etl_pipeline.py
-│   ├── schema_documentation.md
-│   ├── business_queries.sql
-│   └── data_quality_report.txt
+|   ├── README.md
+│   ├── requirements.txt
+│   └── schema_documentation.md
 ├── part2-nosql/
+|   ├── mongodb_operations.js
 │   ├── nosql_analysis.md
-│   ├── mongodb_operations.js
-│   └── products_catalog.json
+│   ├── products_catalog.json
+│   └── README.md
 ├── part3-datawarehouse/
+|   ├── analytics_queries.sql
+|   ├── README.md
 │   ├── star_schema_design.md
-│   ├── warehouse_schema.sql
 │   ├── warehouse_data.sql
-│   └── analytics_queries.sql
+│   └── warehouse_schema.sql
 └── README.md
 
 ---
