@@ -49,23 +49,3 @@ This document provides a theoretical comparison between SQL/relational databases
 All operations are written using MongoDB Query Language and Aggregation Framework with clear comments for readability.
 
 ---
-
-## Tools & Technologies
-
-- **Database:** MongoDB  
-- **Interface:** MongoDB Compass / MongoDB Shell  
-- **Data Format:** JSON  
-- **Language:** JavaScript (MongoDB queries)
-
----
-
-## Learning Outcomes
-
-- Strong understanding of NoSQL concepts and use cases
-- Practical experience with MongoDB queries and aggregations
-- Ability to model flexible and nested data structures
-- Clear comparison of NoSQL and relational database trade-offs
-
----
-
-This completes **Part 2: NoSQL Database Analysis** for the FlexiMart system.
