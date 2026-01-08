@@ -31,6 +31,7 @@
 - `date_key` (PK): Surrogate key (integer, format: YYYYMMDD)
 - `full_date`: Actual date
 - `day_of_week`: Monday, Tuesday, etc.
+- `day_of_month`: Day date
 - `month`: 1–12
 - `month_name`: January, February, etc.
 - `quarter`: Q1, Q2, Q3, Q4
@@ -50,8 +51,9 @@
 - `product_id`: Source system product identifier (product code)
 - `product_name`: Name of the product
 - `category`: Type of the product (Electronics, Fashion)
+- `subcategory`: Sub type of the product (Mobile phones, laptop for the Electronics)
 - `brand`: manufacturer or company name of the product
-- `price`: Cost of the product
+- `unit_price`: Cost of the per product
 - `is_active`: Boolean flag. Indicates product availability in the inventory
 
 ---
@@ -73,6 +75,7 @@
 - `city`: Shipping address 
 - `state`: Shipping address
 - `region`: Shipping address
+- `customer_segment`: Type of customer (Retail, Corporate, Wholesale)
 
 ---
 
@@ -110,8 +113,9 @@ dim_date: {
     full_date: '2024-01-15',
     month: 1,
     quarter: 'Q1',
-    day_of_week: Monday,
-    month_name: January,
+    day_of_week: 'Monday',
+    day_of_month: 15,
+    month_name: 'January',
     year: 2024,
     is_weekend: false
 }
@@ -121,8 +125,9 @@ dim_product: {
     product_id: 'ELC192',
     product_name: 'Laptop',
     category: 'Electronics',
+    subcategory: 'Laptop',
     brand: 'Dell',
-    price: 50000,
+    unit_price: 50000,
     is_active: true
 }
 
@@ -136,7 +141,8 @@ dim_customer: {
     email: 'john.doe@gmail.com',
     phone: +91-7893579207,
     state: 'Maharashtra',
-    region: 'Western'
+    region: 'Western',
+    customer_segment: 'Retail'
 }
 
 
